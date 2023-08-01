@@ -4,55 +4,55 @@
 /*--  Poppins font  --*/
 @font-face {
   font-family: "Poppins, sans-serif";
-  src: url("../fonts/poppins/Poppins-Thin.ttf") format("truetype");
+  src: url("./../fonts/poppins/Poppins-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins, sans-serif";
-  src: url("../fonts/poppins/Poppins-ExtraLight.ttf") format("truetype");
+  src: url("./../fonts/poppins/Poppins-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins, sans-serif";
-  src: url("../fonts/poppins/Poppins-Light.ttf");
+  src: url("./../fonts/poppins/Poppins-Light.ttf");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins, sans-serif";
-  src: url("../fonts/poppins/Poppins-Regular.ttf") format("truetype");
+  src: url("./../fonts/poppins/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins, sans-serif";
-  src: url("../fonts/poppins/Poppins-Medium.ttf") format("truetype");
+  src: url("./../fonts/poppins/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins, sans-serif";
-  src: url("../fonts/poppins/Poppins-SemiBold.ttf") format("truetype");
+  src: url("./../fonts/poppins/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins, sans-serif";
-  src: url("../fonts/poppins/Poppins-Bold.ttf") format("truetype");
+  src: url("./../fonts/poppins/Poppins-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins, sans-serif";
-  src: url("../fonts/poppins/Poppins-ExtraBold.ttf") format("truetype");
+  src: url("./../fonts/poppins/Poppins-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins, sans-serif";
-  src: url("../fonts/poppins/Poppins-Black.ttf") format("truetype");
+  src: url("./../fonts/poppins/Poppins-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -2093,7 +2093,7 @@ footer .ms-footer-detail .ms-social ul li a:hover {
 .ms-style .ms-button .whatsapp {
   width: 23px;
   height: 23px;
-  background-image: url(../images/common/whatsapp.html);
+  background-image: url(../images/common/whatsapp.png);
   background-repeat: no-repeat;
   background-size: 100%;
   display: table;
@@ -2395,3 +2395,24 @@ footer .ms-footer-detail .ms-social ul li a:hover {
           transform: translateY(0);
 }
 /*# sourceMappingURL=dark.css.map */
+
+
+
+.whatsapp-float{
+	position:fixed;
+	width:49px;
+	height:49px;
+	bottom:8px;
+	right:12px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  	font-size:30px;
+	/* box-shadow: 2px 2px 3px #999; */
+  	z-index:100;
+}
+
+.my-whatsapp-float{
+	margin-top:10px;
+}
