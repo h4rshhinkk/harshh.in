@@ -13,8 +13,8 @@
     <meta name="author" content="Mohammed Harshin">
     <meta name="generator" content="Mohammed Harshin | Python">
     <!-- site Favicon -->
-    <link rel="icon" href="assets/img/favicon/favicon.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="assets/img/favicon/favicon.png">
+    <link rel="icon" href="/assets/img/favicon/IMG_7926.jpg" sizes="32x32">
+    <link rel="apple-touch-icon" href="/assets/img/favicon/IMG_7926.jpg">
     <meta name="msapplication-TileImage" content="assets/img/hero/WhatsApp Image 2022-09-23 at 11.50.24 AM.jpg">
 
     <!-- css Font -->
@@ -487,7 +487,7 @@
                                                             <li>Client : Mariya Lorems</li>
                                                             <li>Tech : HTML, Bootstrap, Python</li>
                                                             <li>Type : Product Website</li>
-                                                            <li>URL : <a href="https://greenaqua.geany.website/">www.greenaqua.geany.website</a></li>
+                                                            <li>URL : <a href="https://greenaquafarm.com/">www.greenaquafarm.com</a></li>
                                                         </ul>
 
                                                     </div>
@@ -690,7 +690,7 @@
                     <!-- /Boxes de Acoes -->
                 </div>
                 <div class="col-lg-7 col-md-12">
-                    <form>
+                    <form id="contactForm">
                         <div class="form-group">
                             <input type="text" class="form-control" id="fname" placeholder="Full Name">
                         </div>
@@ -704,7 +704,7 @@
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
                                 placeholder="Message"></textarea>
                         </div>
-                        <button type="submit" class="ms-learn-more-right"><span class="text">Submit</span></button>
+                        <button type="submit" class="ms-learn-more-right" target="_blank"><span class="text" target="_blank">Submit</span></button>
                     </form>
                 </div>
             </div>
@@ -811,7 +811,32 @@
     <!-- Site Main Js -->
     <script src="assets/js/script.js"></script>
 
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">  
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+        
+            // Get user input from the form
+            const fullName = document.getElementById("fname").value;
+            const email = document.getElementById("umail").value;
+            const phone = document.getElementById("phone").value;
+            const message = document.getElementById("exampleFormControlTextarea1").value;
+        
+            // Prepare the message for WhatsApp
+            const whatsappMessage = `Full Name: ${fullName}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`;
+        
+            // Create the WhatsApp link
+            const whatsappLink = `https://wa.me/919562789563?text=${encodeURIComponent(whatsappMessage)}`;
+        
+            // Redirect the user to the WhatsApp link
+            window.location.href = whatsappLink;
+        });
+        </script>
+
+
+
 </body>
 
 </html>
